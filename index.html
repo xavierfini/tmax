@@ -7,23 +7,73 @@
   </head>
   <body>
     <style>
-      h1 {
-        text-align: left;
-	font-family: arial, verdana;
-        font-size: 75px;
-	text-align: center;
-      }
-      .navbar {
+      	h1 {
+           text-align: left;
+	   font-family: arial, verdana;
+           font-size: 75px;
+	   text-align: center;
+      	}
+      	.navbar {
 	
-      }
-      img {
-	float: right;
-      }
+      	}
+     	img {
+	    float: right;
+      	}
+      	/*CSS pour notif alerte*/
+        .fr-alert--warning {
+            box-shadow: inset 0 0 0 1px #b34000, inset 2.5rem 0 0 0 #b34000
+        }
+
+        .fr-alert {
+            --title-spacing: 0 0 0.25rem;
+            --text-spacing: 0 0 0.25rem;
+            box-shadow: inset 0 0 0 1px #FF3F16,inset 2.5rem 0 0 0 #FF3F16;
+            padding: 1rem 2.25rem .75rem 3.5rem;
+            position: relative;
+        }
+
+        .fr-mt-2w {
+            margin-top: 1rem!important;
+        }
+
+        .fr-alert {
+            margin-bottom: 1rem;
+        }
+
+        .fr-alert--warning:before {
+            content:"";
+        }
+
+        .fr-alert--warning:before {
+            -webkit-mask-image: url(fr--warning-fill.svg);
+            mask-image: url(fr--warning-fill.svg);
+            fill:"";
+        }
+
+        .fr-alert:before {
+            --icon-size: 1.5rem;
+            background-color: currentColor;
+            color: var(--text-inverted-grey);
+            display: inline-block;
+            flex: 0 0 auto;
+            height: var(--icon-size);
+            left: 0;
+            margin: 1rem .5rem;
+            -webkit-mask-size: 100% 100%;
+            mask-size: 100% 100%;
+            position: absolute;
+            top: 0;
+            vertical-align: calc((.75em - var(--icon-size))*.5);
+            width: var(--icon-size);
+        }
     </style>
     <img src="Logo_TMAX-removebg-preview.png" width="10%">
     <h1>Projet TMAX</h1>
     <div class="navbar">
 	
+    </div>
+    <div id="alerte-page-retour" class="fr-alert fr-alert--warning fr-mt-2w">
+    	<p>Le site internet est toujours en cours de construction. Si vous avez des problèmes ou modifications à faire, référez vous à Xavier qui pourras faire les modifications</p>
     </div>
   </body>
 </html>
