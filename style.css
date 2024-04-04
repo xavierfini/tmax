@@ -9,10 +9,7 @@
   padding: 0;
 }
 
-body {
-  font-family: Raleway, Helvetica, sans-serif;
-  position: relative;
-}
+
 
 /* New Stacking Context with Fixed */
 .side-nav {
