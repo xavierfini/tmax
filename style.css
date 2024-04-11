@@ -217,8 +217,8 @@ img {
     text-decoration: none;
 }
 
-.menu li a:hover {background: linear-gradient(45deg,cyan,blue 80%);}
-.menu li a:active {background: linear-gradient(45deg,cyan,blue 80%);}
+.menu li a:hover {background: #ffffff;}
+.menu li a:active {background: #ffffff;}
 
 .menu .sousmenu li a:hover {
     background-color: #199BD2;
@@ -247,7 +247,7 @@ img {
 }
 
 .menu li a:hover {
-    background-color: linear-gradient(45deg,cyan,blue);
+    background-color: #ffffff;
 	color: white;
 
 }
