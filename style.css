@@ -210,7 +210,7 @@ img {
 .menu li a:link, .menu li a:visited {
 	display: block;
     color: black;
-	background: #80D4F9;
+	background: #476655;
     padding: 6px 10px;
     border-right: 1px solid #FFF;
     text-align: center;
@@ -221,7 +221,7 @@ img {
 .menu li a:active {background: #476655;}
 
 .menu .sousmenu li a:hover {
-    background-color: #199BD2;
+    background-color: #476655;
 }
 
 .menu .sousmenu {
