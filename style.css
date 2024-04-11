@@ -131,3 +131,7 @@ h1 {
 .menu li:hover .sousmenu {
     display: block;
 }
+
+.btn {
+    cursor: not-allowed;
+}
