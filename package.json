@@ -1,5 +1,6 @@
+
 {
-  "name": "animated-sidebar",
+  "name": "side-bar",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +13,6 @@
     "vite": "^5.0.8"
   },
   "dependencies": {
-    "gsap": "^3.12.5",
     "sass": "^1.70.0"
   }
 }
