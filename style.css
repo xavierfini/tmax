@@ -4,10 +4,6 @@ h1 {
   font-size: 75px;
 	text-align: center;
 }
-	    
-img {
-	float: right;
-}
 
 /*CSS pour notif alerte*/
 .fr-alert--warning {
