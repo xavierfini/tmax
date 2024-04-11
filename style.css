@@ -217,8 +217,8 @@ img {
     text-decoration: none;
 }
 
-.menu li a:hover {background: #ffffff;}
-.menu li a:active {background: #ffffff;}
+.menu li a:hover {background: #476655;}
+.menu li a:active {background: #476655;}
 
 .menu .sousmenu li a:hover {
     background-color: #199BD2;
@@ -247,7 +247,7 @@ img {
 }
 
 .menu li a:hover {
-    background-color: #ffffff;
+    background-color: #476655;
 	color: white;
 
 }
