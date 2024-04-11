@@ -184,3 +184,78 @@ img {
 .text-alert {
   font-family: arial, verdana;
 }
+
+.menu {
+    height: 60px;
+    list-style: none;
+    padding: 0px;
+    margin: 20px;
+}
+
+.menu li {
+    float: left;
+    width: 175px;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.3px;
+	position: relative;
+	transition: 0.5s;
+}
+
+.menu li a:link, .menu li a:visited {
+	display: block;
+    color: black;
+	background: #80D4F9;
+    padding: 6px 10px;
+    border-right: 1px solid #FFF;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu li a:hover {background: linear-gradient(45deg,cyan,blue 80%);}
+.menu li a:active {background: linear-gradient(45deg,cyan,blue 80%);}
+
+.menu .sousmenu li a:hover {
+    background-color: #199BD2;
+}
+
+.menu .sousmenu {
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.menu .sousmenu li {
+	float: none;
+    margin: 0;
+    padding: 0;
+    border-top: 0px solid transparent; 
+    border-right: 1px solid transparent;
+}
+
+.menu .sousmenu li a:link, .menu li a:visited {
+    display: block;
+    color: black;
+    text-decoration: none;	
+}
+
+.menu li a:hover {
+    background-color: linear-gradient(45deg,cyan,blue);
+	color: white;
+
+}
+
+.menu li a:hover::before {
+	width: 100%;
+}
+
+.menu li:hover .sousmenu {
+    display: block;
+}
