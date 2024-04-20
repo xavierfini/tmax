@@ -1,73 +1,32 @@
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style2.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <title>Page de Connexion</title>
-    <style>
-        /* Styles CSS inchangés */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .login-container {
-            max-width: 400px;
-            margin: auto;
-            padding: 20px;
-            background-color: #fff;
-            margin-top: 100px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            box-sizing: border-box;
-        }
-        button {
-            background: linear-gradient(45deg, #0500FF, #06C5FB);
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Login Signup Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div class="wrapper">
-            <div class="login-box">
-              <div class="login-header">
-                <span>Connexion</span>
-              </div>
-              <div class="input_box">
-                <input type="text" id="username" class="input-field" required>
-                <label for="username" class="label">Nom d'utilisateur</label>
-                <i class="bx bx-user icon"></i>
-              </div>
-              <div class="input_box">
-                <input type="password" id="password" class="input-field" required>
-                <label for="password" class="label">Mot de passe</label>
-                <i class="bx bx-lock-alt icon"></i>
-              </div>
-              <div class="input_box">
-                <input type="submit" class="input-submit" value="Login" onclick="validateForm()">
-              </div>
-            </div>
+    <div class="main">
+      <div class="container b-container" id="b-container">
+        <form class="form" id="b-form" method="" action="">
+          <h2 class="form_title title">Sign in to Website</h2>
+          <div class="form__icons">
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-instagram-alt' ></i>
+            <i class='bx bxl-twitter' ></i>
           </div>
-          
-          <script src="script.js"></script>
-
-<br><br><br><br>
+          <span class="form__span">or use your email account</span>
+          <input class="form__input" type="email" placeholder="Email">
+          <input class="form__input" type="password" placeholder="Password"><a class="form__link">Forgot your password?</a>
+          <button class="form__button button submit">SIGN IN</button>
+        </form>
+      </div>
+      </div>
+    </div>
+</body>
+</html>
 </body>
 </html>
