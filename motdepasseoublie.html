@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Signup Form</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" type="text/css" href="style2.css">
     <link rel="stylesheet" type="text/css" href="stylemdp.css">
 </head>
 <body>
@@ -15,22 +15,19 @@
           <h2 class="form_title title">Mot de passe oublié</h2>
           <span class="form__span">ou utilisez un compte mail</span>
           <input class="form__input" type="text" id="username" placeholder="Votre identifiant" required>
-          <button class="form__button button submit" onclick="validateForm()">RECUPERER VOTRE MDP</button>
+          <div class="container">
+            <div class="toast-buttons">
+                <div class="toast-row">
+                    <button class="form__button button submit custom-toast info-toast">RECUPERER VOTRE MDP</button>
+                </div>
+            </div>
+        </div>
         </form>
       </div>
       </div>
     </div>
-    <div class="notification">
-        <div class="notification__body">
-            <img
-                src="check-circle.svg"
-                alt="Success"
-                class="notification__icon"
-            >
-            Vous recevrez un mail dans quelques instants!
-        </div>
-        <div class="notification__progress"></div>
-    </div>
+    
+    
     <script src="scriptmdp.js"></script>
 </body>
 </html>
