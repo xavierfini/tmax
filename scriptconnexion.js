@@ -1,7 +1,7 @@
 // script.js
 
 var users = {
-    "admin": { "password": "admin", "redirect": "admin.html" },
+    "admin@gmail.com": { "password": "admin", "redirect": "admin.html" },
     // Ajoutez d'autres utilisateurs au besoin
 };
 
