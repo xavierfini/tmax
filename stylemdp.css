@@ -1,58 +1,5 @@
 /* style.css */
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-} 
-  
-.toast-buttons { 
-    max-width: 700px; 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 15px; 
-    margin: 2em auto; 
-} 
-  
-.toast-row { 
-    display: flex; 
-    justify-content: center; 
-    margin: 1em 0; 
-    padding: 1rem; 
-    flex-wrap: wrap; 
-} 
-  
-button.custom-toast { 
-    padding: 0.5rem 1rem; 
-    border: none; 
-    color: #fff; 
-    font-weight: 500; 
-    border-radius: 5px; 
-    box-shadow: 2px 2px 10px
-        rgba(0, 0, 0, 0.785); 
-    cursor: pointer; 
-    width: 150px; 
-    margin: 0.5em; 
-    transition: filter 0.2s ease-in-out, 
-        transform 0.3s ease-in-out; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    font-size: 1rem; 
-    background-color: transparent; 
-    outline: none; 
-    background: #3498db; 
-    color: #fff; 
-} 
-  
-button.custom-toast:hover { 
-    filter: brightness(0.9); 
-} 
 
-button.info-toast { 
-    background-color: #3498db; 
-} 
-  
 .toast { 
     position: fixed; 
     top: 25px; 
