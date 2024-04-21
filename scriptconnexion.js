@@ -2,7 +2,7 @@
 
 var users = {
     "admin": { "password": "admin", "redirect": "#.html" },
-    "xavierfini": { "password": "Xavier14!=", "redirect": "#.html" },
+    "xavierfini": { "password": "Xavier14!=", "redirect": "xavierfini.html" },
     // Ajoutez d'autres utilisateurs au besoin
 };
 
