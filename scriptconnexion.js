@@ -16,8 +16,3 @@ function validateForm() {
         alert('Nom d\'utilisateur ou mot de passe incorrect.');
     }
 }
-
-function nouveaumdp() {
-    let id = prompt('Quel est votre identifiant ?', Votre identifiant);
-    alert(`Vous recevrez un mail dans quelques instants avec un nouveau mot de passe!`);
-}
