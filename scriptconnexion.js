@@ -1,8 +1,7 @@
 // script.js
 
 var users = {
-    "admin": { "password": "admin", "redirect": "#.html" },
-    "xavierfini": { "password": "Xavier14!=", "redirect": "xavierfini.html" },
+    "xavier.fini": { "password": "Xavier", "redirect": "xavierfini.html" },
     // Ajoutez d'autres utilisateurs au besoin
 };
 
