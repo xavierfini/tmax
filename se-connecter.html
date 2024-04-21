@@ -1,33 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Signup Form</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
     <link rel="stylesheet" type="text/css" href="style2.css">
-</head>
-<body>
-    <div class="main">
-      <div class="container b-container" id="b-container">
-        <form class="form" id="b-form" method="" action="">
-          <h2 class="form_title title">Connectez-vous</h2>
-          <div class="form__icons">
-            <i class='bx bxl-facebook-circle'></i>
-            <i class='bx bxl-instagram-alt' ></i>
-            <i class='bx bxl-twitter' ></i>
-          </div>
-          <span class="form__span">ou utilisez un compte mail</span>
-          <input class="form__input" type="text" id="username" placeholder="Identifiant" required>
-          <input class="form__input" type="password" id="password" placeholder="Mot de Passe" required><a href="" class="form__link">Vous avez oublié votre mot de passe ?</a>
-          <button class="form__button button submit" onclick="validateForm()">SE CONNECTER</button>
-        </form>
-      </div>
+    <style>
+    /*navbar*/
+    body {
+    font-family: "Lato", sans-serif;
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 275px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: linear-gradient(45deg, #BF3C3C, #DB7D86);
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #ff6b6b;
+        display: block;
+        text-transform: uppercase;
+    }
+
+    .sidenav a:hover {
+        color: #ffffff;
+    }
+
+    .mainbody {
+        margin-left: 275px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    </style>
+  </head>
+  <body>
+
+  <div class="sidenav">
+    <a href="index.html">Accueil</a>
+    <a href="#.html">A propos du projet</a>
+    <a href="notre-equipe.html">A propos de l'équipe</a>
+    <a href="tel:0622103749">Contacter les secours</a>
+    <a href="se-connecter.html">Se connecter</a>
+  </div>
+    <div class="mainbody">
+      <div class="main">
+        <div class="container b-container" id="b-container">
+          <form class="form" id="b-form" method="" action="">
+            <h2 class="form_title title">Connectez-vous</h2>
+            <div class="form__icons">
+              <i class='bx bxl-facebook-circle'></i>
+              <i class='bx bxl-instagram-alt' ></i>
+              <i class='bx bxl-twitter' ></i>
+            </div>
+            <span class="form__span">ou utilisez un compte mail</span>
+            <input class="form__input" type="text" id="username" placeholder="Identifiant" required>
+            <input class="form__input" type="password" id="password" placeholder="Mot de Passe" required><a href="" class="form__link">Vous avez oublié votre mot de passe ?</a>
+            <button class="form__button button submit" onclick="validateForm()">SE CONNECTER</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="scriptconnexion.js"></script>
-</body>
+  </div>
+  </body>
 </html>
 </body>
-</html>
