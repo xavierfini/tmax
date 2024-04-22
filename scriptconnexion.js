@@ -19,7 +19,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
     if (isAuthenticated) {
         // Rediriger vers la page dédiée si l'utilisateur est authentifié
-        window.location.href = "page-dediee.html";
+        window.location.href = "xavierfini.html";
     } else {
         alert("Identifiant ou mot de passe incorrect");
     }
