@@ -6,7 +6,6 @@ var users = [
 ];
 
 document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Empêcher le formulaire de se soumettre
 
     // Récupérer les valeurs de l'identifiant et du mot de passe
     var username = document.getElementById("username").value;
