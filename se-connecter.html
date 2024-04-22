@@ -70,7 +70,38 @@
         </div>
       </div>
     </div>
-    <script src="scriptconnexion.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    // Tableau des utilisateurs avec leurs informations d'identification et redirections
+    var users = [
+        { username: "utilisateur1", password: "motdepasse1", redirectUrl: "page-personnelle1.html" },
+        { username: "utilisateur2", password: "motdepasse2", redirectUrl: "page-personnelle2.html" },
+        // Ajoutez d'autres utilisateurs au besoin
+    ];
+
+    // Écouteur d'événement pour le soumission du formulaire de connexion
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Empêche le formulaire de se soumettre
+
+        // Récupération des valeurs de l'identifiant et du mot de passe
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Recherche de l'utilisateur dans le tableau
+        var user = users.find(function(user) {
+            return user.username === username && user.password === password;
+        });
+
+        // Vérification si l'utilisateur existe et redirection
+        if (user) {
+            window.location.href = user.redirectUrl; // Redirige vers la page personnelle de l'utilisateur
+        } else {
+            alert("Identifiant ou mot de passe incorrect");
+        }
+    });
+});
+
+    </script>
   </div>
   </body>
 </html>
