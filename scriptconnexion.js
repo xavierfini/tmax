@@ -1,18 +1,26 @@
-// script.js
-
-var users = {
-    "xavier.fini": { "password": "Xavier", "redirect": "xavierfini.html" },
+// Définition des utilisateurs avec leurs identifiants et mots de passe
+var users = [
+    { username: "xavierfini", password: "xavierfini" },
+    { username: "utilisateur2", password: "motdepasse2" },
     // Ajoutez d'autres utilisateurs au besoin
-};
+];
 
-function validateForm() {
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Empêcher le formulaire de se soumettre
 
-    if (users.hasOwnProperty(username) && users[username].password === password) {
-        // Rediriger l'utilisateur vers la page spécifiée dans l'objet users
-        window.location.href = users[username].redirect;
+    // Récupérer les valeurs de l'identifiant et du mot de passe
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Vérifier l'authentification pour chaque utilisateur
+    var isAuthenticated = users.some(function(user) {
+        return user.username === username && user.password === password;
+    });
+
+    if (isAuthenticated) {
+        // Rediriger vers la page dédiée si l'utilisateur est authentifié
+        window.location.href = "page-dediee.html";
     } else {
-        alert('Nom d\'utilisateur ou mot de passe incorrect.');
+        alert("Identifiant ou mot de passe incorrect");
     }
-}
+});
