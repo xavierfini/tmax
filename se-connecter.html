@@ -69,8 +69,8 @@
               Nom d'utilisateur:
         </label>
         <input type="text"
-               id="first"
-               name="first"
+               id="username"
+               name="username"
                placeholder="Entrer votre nom d'utilisateur" required>
 
         <label for="password">
@@ -82,7 +82,7 @@
                placeholder="Entrer votre mot de passe" required>
 
         <div class="wrap">
-            <button type="submit">
+            <button type="submit" class="input-submit" value="Login" onclick="validateForm()">
                 SE CONNECTER
             </button>
         </div>
@@ -90,28 +90,24 @@
     </div>
 
     <script>
-      document.getElementById("loginForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Empêche l'envoi du formulaire par défaut
-        
-        var users = [
-            { username: "xavierfini", password: "Xavier14", redirectUrl: "xavierfini.html" },
-            { username: "utilisateur2", password: "motdepasse2", redirectUrl: "page2.html" },
-            // Ajoutez d'autres utilisateurs au besoin
-        ];
+// script.js
 
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
+var users = {
+    "xavier.fini": { "password": "Xav", "redirect": "xavierfini.html" },
+    // Ajoutez d'autres utilisateurs au besoin
+};
 
-        var authenticatedUser = users.find(function(user) {
-            return user.username === username && user.password === password;
-        });
+function validateForm() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
 
-        if (authenticatedUser) {
-            window.location.href = authenticatedUser.redirectUrl;
-        } else {
-            alert("Identifiant ou mot de passe incorrect");
-        }
-    });
+    if (users.hasOwnProperty(username) && users[username].password === password) {
+        // Rediriger l'utilisateur vers la page spécifiée dans l'objet users
+        window.location.href = users[username].redirect;
+    } else {
+        alert('Nom d\'utilisateur ou mot de passe incorrect.');
+    }
+}
     </script>
 
 
