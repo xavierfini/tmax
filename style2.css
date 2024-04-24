@@ -1,14 +1,5 @@
 /*style.css*/
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: sans-serif;
-  line-height: 1.5;
-  min-height: 100vh;
-  flex-direction: column;
-  margin: 0;
-}
+
 
 .main {
   background-color: #D1D9E6;
