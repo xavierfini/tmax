@@ -1,56 +1,186 @@
-/*style.css*/
+/* POLICE POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-
-.main2 {
-  background-color: #D1D9E6;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  padding: 10px 20px;
-  transition: transform 0.2s;
-  width: 500px;
-  text-align: center;
+*{
+    marge : 0 ;
+    remplissage : 0 ;
+    dimensionnement de la boîte : bordure-boîte ;
+    famille de polices : « Poppins », sans empattement ;
 }
 
-h1 {
-  color: #BF3C3C;
-}
+/* ===== VARIABLES DE COULEUR ===== */
 
-label {
-  display: block;
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  text-align: left;
-  color: #555;
-  font-weight: bold;
+:racine{
+    --couleur primaire : #7ACFFF ;
+    --seconde couleur : #ffffff ;
+    --couleur-noir : #ffffff ;
 }
 
 
-input {
-  display: block;
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+/* ===== CSS réutilisable ===== */
+
+un{
+    décoration de texte : aucune ;
+    couleur: var(--seconde couleur);
+}
+a:survoler{
+    décoration de texte : souligner ;
+
 }
 
-button {
-  padding: 15px;
-  border-radius: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border: none;
-  color: white;
-  cursor: pointer;
-  background-color: #BF3C3C;
-  width: 100%;
-  font-size: 16px;
+
+/* ===== WRAPPER ===== */
+
+.wrapper{
+    largeur : 100 % ;
+    affichage : flexible ;
+    justifier-contenu : centre ;
+    align-items : centre ;
+    hauteur min : 100 vh ;
+    couleur d'arrière-plan : rgba(0, 0, 0, 0.2) ;
 }
 
-.wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.boîte de connexion{
+    position : relative ;
+    largeur : 450 px ;
+    bordure : 3px solid var(--primary-color);
+    rayon de bordure : 15 px ;
+    rembourrage : 7,5em 2,5em 4em 2,5em ;
+    couleur d'arrière-plan : #ffffff ;
+    box-shadow : 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.login-header{
+    position : absolue ;
+    haut : 0 ;
+    gauche : 50 % ;
+    transformer : traduireX(-50 %);
+    affichage : flexible ;
+    align-items : centre ;
+    justifier-contenu : centre ;
+    arrière-plan : var(--couleur-primaire);
+    largeur : 190 px ;
+    hauteur : 70px ;
+    rayon de bordure : 0 0 20px 20px ;
+}
+
+.login-header span {
+    taille de police : 30 px ;
+    couleur: var(--couleur-noir);
+}
+
+.login-header::avant{
+    contenu: "";
+    position : absolue ;
+    haut : 0 ;
+    gauche : -30px ;
+    largeur : 30 px ;
+    hauteur : 30px ;
+    rayon de bordure en haut à droite : 50 % ;
+    fond : transparent ;
+    box-shadow : 15px 0 0 0 var(--primary-color);
+}
+
+.login-header::after{
+    contenu: "";
+    position : absolue ;
+    haut : 0 ;
+    à droite : -30px ;
+    largeur : 30 px ;
+    hauteur : 30px ;
+    bordure supérieure gauche : 50 % ;
+    fond : transparent ;
+    box-shadow : -15px 0 0 0 var(--primary-color);
+}
+
+.zone de saisie{
+    position : relative ;
+    affichage : flexible ;
+    direction flexible : colonne ;
+    marge : 20px 0 ;
+}
+
+.champ de saisie{
+    largeur : 100 % ;
+    hauteur : 55px ;
+    taille de police : 16 px ;
+    fond : transparent ;
+    couleur : #000000 ;
+    remplissage en ligne : 20px 50px ;
+    border: 2px solid var(--primary-color);
+    rayon de bordure : 30 px ;
+    contour : aucun ;
+}
+
+#utilisateur{
+    marge inférieure : 10 px ;
+}
+
+.étiquette{
+    position : absolue ;
+    haut : 20 px ;
+    gauche : 20px ;
+    transition : 0,2 s facilité d'entrée et de sortie ;
+}
+
+.input-field:focus ~ .label,
+.input-field:valid ~ .label{
+    position : absolue ;
+    haut : -10px ;
+    gauche : 20px ;
+    taille de police : 14 px ;
+    couleur d'arrière-plan : var(--couleur-primaire);
+    rayon de bordure : 30 px ;
+    couleur : #ffffff ;
+    remplissage : 0 10px ;
+
+}
+
+.icône{
+    position : absolue ;
+    haut : 18px ;
+    à droite : 25 px ;
+    taille de police : 20 px ;
+}
+
+.souviens-toi-oublié{
+    affichage : flexible ;
+    justifier-contenu : espace entre les deux ;
+    taille de police : 15 px ;
+}
+
+.input-submit{
+    largeur : 100 % ;
+    hauteur : 50px ;
+    arrière-plan : #0500FF ;
+    taille de police : 16 px ;
+    poids de la police : 500 ;
+    bordure : aucune ;
+    rayon de bordure : 30 px ;
+    curseur : pointeur ;
+}
+
+.input-submit:hover{
+    arrière-plan : #06C5FB ;
+}
+
+.registre{
+    alignement du texte : centre ;
+}
+
+.enregistrer un{
+    poids de la police : 500 ;
+}
+
+un{
+    couleur : #ffffff ;
+}
+
+Écran @media uniquement et (largeur maximale : 564 px) {
+    .wrapper{
+        remplissage : 20 px ;
+    }
+    .boîte de connexion{
+        rembourrage : 7,5em 1,5em 4em 2,5em ;
+    }
 }

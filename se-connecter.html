@@ -61,39 +61,37 @@
     <a href="se-connecter.html">Se connecter</a>
   </div>
   <div class="main">
-    <div class="main2">
-    <h1>Projet TMAX</h1>
-    <h3>Entrez vos identifiants</h3>
-    <form action="" id="loginForm">
-        <label for="first">
-              Nom d'utilisateur:
-        </label>
-        <input type="text"
-               id="username"
-               name="username"
-               placeholder="Entrer votre nom d'utilisateur" required>
 
-        <label for="password">
-              Mot de passe:
-        </label>
-        <input type="password"
-               id="password"
-               name="password"
-               placeholder="Entrer votre mot de passe" required>
-
-        <div class="wrap">
-            <button type="submit" class="input-submit" value="Login" onclick="validateForm()">
-                SE CONNECTER
-            </button>
+    <div class="wrapper">
+        <div class="login-box">
+          <div class="login-header">
+            <span>Connexion</span>
+          </div>
+          <div class="input_box">
+            <input type="text" id="username" class="input-field" required>
+            <label for="username" class="label">Nom d'utilisateur</label>
+            <i class="bx bx-user icon"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" id="password" class="input-field" required>
+            <label for="password" class="label">Mot de passe</label>
+            <i class="bx bx-lock-alt icon"></i>
+          </div>
+          <div class="input_box">
+            <input type="submit" class="input-submit" value="Login" onclick="validateForm()">
+          </div>
         </div>
-    </form>
     </div>
+
+
 
     <script>
 // script.js
 
 var users = {
-    "xavier.fini": { "password": "Xav", "redirect": "xavierfini.html" },
+    "xavier.fini": { "password": "X=DP!f", "redirect": "login=xavier-fini.html" },
+    "lamia.gorgulu": { "password": "L=DG!g", "redirect": "login=lamia-gorgulu.html" },
+    "hugo.combedargent": { "password": "H=DGDRE!c", "redirect": "login=hugo-combedargent.html" },
     // Ajoutez d'autres utilisateurs au besoin
 };
 
