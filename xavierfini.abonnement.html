@@ -19,6 +19,57 @@
     <link rel="stylesheet" href="stylexfabonnement.css">
   </head>
   <body>
+    <div class="card">
+        <div class="card-top">
+          <div class="card-top-info">
+            <h1 class="card-top-info__header">Abonnement</h1>
+            <p class="card-top-info__description">
+              Renouvellement automatique annuel
+            </p>
+          </div>
+          <div class="card-tag">Actif</div>
+        </div>
+        <div class="card-bottom">
+          <div class="card-bottom-info">
+            <div class="card-amount">
+              <span>Tarif</span>
+              <span>135€/an</span>
+            </div>
+            <div class="billing-date">
+              <span>Prochaine date de facturation</span>
+              <span>15 décembre 2024</span>
+            </div>
+          </div>
+          <button class="btn view-details-btn">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="svg-icon"
+            >
+              <path
+                d="M8.66663 1.33334H3.99996C3.64634 1.33334 3.3072 1.47381 3.05715 1.72386C2.8071 1.97391 2.66663 2.31305 2.66663 2.66667V13.3333C2.66663 13.687 2.8071 14.0261 3.05715 14.2761C3.3072 14.5262 3.64634 14.6667 3.99996 14.6667H12C12.3536 14.6667 12.6927 14.5262 12.9428 14.2761C13.1928 14.0261 13.3333 13.687 13.3333 13.3333V6L8.66663 1.33334Z"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.66663 1.33334V6H13.3333"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span class="text">Voir les détails</span>
+          </button>
+        </div>
+      </div>
+
+      
     <nav class="sidebar">
       <div class="sidebar-top-wrapper">
         <div class="sidebar-top">
@@ -29,6 +80,12 @@
             </span>
           </a>
         </div>
+        <div class="expand-btn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.00979 2.72L10.3565 7.06667C10.8698 7.58 10.8698 8.42 10.3565 8.93333L6.00979 13.28"
+                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
       </div>
       <div class="sidebar-links">
         <h2>Principal</h2>
@@ -187,55 +244,7 @@
     </nav>
     <script src="scriptxf.js"></script>
 
-    <div class="card">
-        <div class="card-top">
-          <div class="card-top-info">
-            <h1 class="card-top-info__header">Abonnement</h1>
-            <p class="card-top-info__description">
-              Renouvellement automatique annuel
-            </p>
-          </div>
-          <div class="card-tag">Actif</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-bottom-info">
-            <div class="card-amount">
-              <span>Tarif</span>
-              <span>135€/an</span>
-            </div>
-            <div class="billing-date">
-              <span>Prochaine date de facturation</span>
-              <span>15 décembre 2024</span>
-            </div>
-          </div>
-          <button class="btn view-details-btn">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="svg-icon"
-            >
-              <path
-                d="M8.66663 1.33334H3.99996C3.64634 1.33334 3.3072 1.47381 3.05715 1.72386C2.8071 1.97391 2.66663 2.31305 2.66663 2.66667V13.3333C2.66663 13.687 2.8071 14.0261 3.05715 14.2761C3.3072 14.5262 3.64634 14.6667 3.99996 14.6667H12C12.3536 14.6667 12.6927 14.5262 12.9428 14.2761C13.1928 14.0261 13.3333 13.687 13.3333 13.3333V6L8.66663 1.33334Z"
-                stroke="black"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M8.66663 1.33334V6H13.3333"
-                stroke="black"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <span class="text">Voir les détails</span>
-          </button>
-        </div>
-      </div>
+    
 
 
   </body>
