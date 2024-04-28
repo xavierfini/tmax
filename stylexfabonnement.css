@@ -14,7 +14,7 @@
   background-color: var(--color-white);
   border: none;
   border-radius: 1rem;
-  display: flex;
+
   flex-direction: column;
   padding: 1rem;
 
