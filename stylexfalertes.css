@@ -15,7 +15,7 @@
 }
 
 .hero-section .intrusion{
-    background-color: rgba(95, 255, 239, 0.78);
+    background-color: rgba(255, 164, 95, 0.78);
     border: solid 7px #ffffff;
     border-radius: 1rem;
     padding: .75rem .5rem;
@@ -23,9 +23,17 @@
 }
 
 .hero-section .secours{
-    background-color: rgba(103, 95, 255, 0.78);
+    background-color: rgba(95, 122, 255, 0.78);
     border: solid 7px #ffffff;
     border-radius: 1rem;
     padding: .75rem .5rem;
     color: #ffffff;
+}
+
+.content-header {
+    font-size: 25px;
+}
+
+.content-body {
+    font-size: 20px;
 }
