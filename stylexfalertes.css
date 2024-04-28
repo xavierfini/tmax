@@ -1,0 +1,31 @@
+.hero-section{
+    height: 100%;
+    width: fit-content;
+    padding-inline: 1rem;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.hero-section .incendie{
+    background-color: rgba(255, 95, 95, 0.78);
+    border: solid 7px #ffffff;
+    border-radius: 1rem;
+    padding: .75rem .5rem;
+    color: #ffffff;
+}
+
+.hero-section .intrusion{
+    background-color: rgba(95, 255, 239, 0.78);
+    border: solid 7px #ffffff;
+    border-radius: 1rem;
+    padding: .75rem .5rem;
+    color: #ffffff;
+}
+
+.hero-section .secours{
+    background-color: rgba(103, 95, 255, 0.78);
+    border: solid 7px #ffffff;
+    border-radius: 1rem;
+    padding: .75rem .5rem;
+    color: #ffffff;
+}
