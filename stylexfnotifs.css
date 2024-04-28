@@ -8,9 +8,8 @@
 
 .hero-section .content{
     background-color: rgba(218, 218, 218, 0.78);
-    border: none;
+    border: solid 7px #f9fafb;
     border-radius: 1rem;
     padding: .75rem .5rem;
     color: #f9fafb;
-    padding-bottom: 25px;
 }
