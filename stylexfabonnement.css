@@ -23,8 +23,7 @@
 }
 
 .card-top {
-  display: flex;
-  flex-direction: column;
+
   justify-content: space-between;
   row-gap: 0.75rem;
   padding-bottom: 1rem;
