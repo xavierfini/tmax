@@ -34,3 +34,8 @@
         text-shadow: 0 0 7px #BF3C3C;
     }
 }
+
+.fondu-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
