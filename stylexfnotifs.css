@@ -7,9 +7,10 @@
 }
 
 .hero-section .content{
-    background-color: rgb(113 119 144 / 78%);
+    background-color: rgba(218, 218, 218, 0.78);
     border: none;
     border-radius: 1rem;
     padding: .75rem .5rem;
     color: #f9fafb;
+    padding-bottom: 25px;
 }
