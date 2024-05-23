@@ -27,7 +27,17 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
+  .cam-container{
+    width:50%;
+    border: 3px solid #3AAA35;
+    border-radius: 6px;
+    overflow: hidden; 
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px;
+  }
   .sidebar {
     position: sticky;
     top: 0;
