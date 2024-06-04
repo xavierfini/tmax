@@ -82,11 +82,10 @@ function startTime() {
   var today = new Date();
   var h = today.getHours();
   var m = today.getMinutes();
-  var s = today.getSecondes();
 
   m = checkTime(m);
   document.getElementById('time').innerHTML =
-  h + ":" + m + ":" + s;
+  h + ":" + m;
   var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
