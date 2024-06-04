@@ -79,6 +79,9 @@ function startTime() {
   var s = today.getSeconds();
 
   m = checkTime(m);
+  if s < 10 {
+	  var s = "0" + today.getSeconds();
+  }
   document.getElementById('time').innerHTML =
   h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
