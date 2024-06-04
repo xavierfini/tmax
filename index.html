@@ -51,6 +51,17 @@
         .sidenav {padding-top: 15px;}
         .sidenav a {font-size: 18px;}
       }
+
+      #time {
+          font-size: 30px;
+          font-family: 'Roboto', sans-serif;
+          color: #ffffff;
+          text-shadow:
+          -1px -1px 0 #000,
+           1px -1px 0 #000,
+          -1px 1px 0 #000,
+           1px 1px 0 #000;
+	}
     </style>
   </head>
   <body>
@@ -62,7 +73,26 @@
       <a href="tel:0622103749">Contacter les secours</a>
       <a href="test.html">Contacter l'assistance</a>
       <a href="se-connecter.html">Se connecter</a>
+      <div id="time"></div>
+
     </div>
+
+	  <script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  m = checkTime(m);
+  document.getElementById('time').innerHTML =
+  "Local Time : "+h + ":" + m;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+ 
+startTime();</script>
     <div class="main">
       <img src="Logo_TMAX-removebg-preview.png" width="57%">
     </div>
